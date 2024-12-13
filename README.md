@@ -4,9 +4,10 @@ This project is a Breast Cancer Prediction System built using a Random Forest Cl
 
 The code demonstrates the integration of machine learning (Random Forest) with a web application built using Flask.
 
-Project Structure
-graphql
+Project Structure:
+bash
 Copy code
+graphql
 breast_cancer_prediction/
 │
 ├── app.py                # Flask web application
@@ -17,10 +18,11 @@ breast_cancer_prediction/
 │   └── index.html        # Main HTML page for the app
 ├── requirements.txt      # List of Python dependencies
 ├── README.md             # Project documentation
-└── assets/          # Folder containing screenshots (e.g., of the app in action)
+└── assets/               # Folder containing screenshots (e.g., of the app in action)
     ├── screenshot 1.png
     ├── screenshot 2.png
     └── screenshot 3.png
+
 Prerequisites
 To run this project, you will need Python 3.x installed, as well as the required Python packages listed below.
 
