@@ -5,11 +5,7 @@ This project is a Breast Cancer Prediction System built using a Random Forest Cl
 The code demonstrates the integration of machine learning (Random Forest) with a web application built using Flask.
 
 Project Structure:
-bash
-Copy code
-graphql
 breast_cancer_prediction/
-│
 ├── app.py                # Flask web application
 ├── model.py              # Contains the classifier model code
 ├── classifier_rf.pkl     # Pre-trained Random Forest model
@@ -19,9 +15,9 @@ breast_cancer_prediction/
 ├── requirements.txt      # List of Python dependencies
 ├── README.md             # Project documentation
 └── assets/               # Folder containing screenshots (e.g., of the app in action)
-    ├── screenshot 1.png
-    ├── screenshot 2.png
-    └── screenshot 3.png
+    ├── screenshot1.png
+    ├── screenshot2.png
+    └── screenshot3.png
 
 Prerequisites
 To run this project, you will need Python 3.x installed, as well as the required Python packages listed below.
@@ -33,8 +29,6 @@ Scikit-learn: Machine learning library used for the Random Forest Classifier.
 Pickle: For saving and loading the trained model.
 You can install the required libraries by running:
 
-bash
-Copy code
 pip install -r requirements.txt
 requirements.txt
 makefile
