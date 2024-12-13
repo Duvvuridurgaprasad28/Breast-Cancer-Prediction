@@ -1,18 +1,12 @@
-Breast Cancer Prediction Web Application
+# Breast Cancer Prediction Overview
 Overview
-This project is a Breast Cancer Prediction System built using a Random Forest Classifier. The system takes a set of input features (such as tumor characteristics) and predicts whether the tumor is cancerous or not cancerous. The model is deployed as a Flask web application where users can input data and receive predictions in real-time.
+This project is a Breast Cancer Prediction web based application which is built using a Random Forest Classifier. This system takes a set of input features (such as tumor characteristics) and predicts whether a pereson is having tumor which is cancerous or not cancerous. The model is deployed by using Flask web based application where users can give input data and receive predictions in real-time.
 
 The code demonstrates the integration of machine learning (Random Forest) with a web application built using Flask.
-
-# Breast Cancer Prediction Web Application Overview
-
-This project is a Breast Cancer Prediction System built using a Random Forest Classifier. The system takes a set of input features (such as tumor characteristics) and predicts whether the tumor is cancerous or not cancerous. The model is deployed as a Flask web application where users can input data and receive predictions in real-time.
 
 ## Project Structure
 
 ```bash
-python
-Copy code
 breast_cancer_prediction/
 ├── app.py  # Flask web application
 ├── model.py  # Contains the classifier model code
@@ -40,8 +34,6 @@ Pickle: For saving and loading the trained model.
 You can install the required libraries by running:
 
 ```bash
-python
-Copy code
 pip install -r requirements.txt
 ```
 Flask==2.1.1
@@ -59,8 +51,6 @@ Input Example:
 Here’s an example of the input data that the classifier expects (30 numerical values):
 
 ```bash
-python
-Copy code
 input_text = (-0.4976419 ,  0.61365274, -0.49813131, -0.53102815, -0.57694824,
               -0.17494424, -0.36215622, -0.284859  ,  0.43345165,  0.17818232,
               -0.36844966,  0.55310406, -0.31671104, -0.40524636,  0.04025752,
@@ -72,8 +62,6 @@ Prediction Example:
 The input data is converted to a numpy array and passed to the classifier:
 
 ```bash
-python
-Copy code
 np_df = np.asarray(input_text)
 prediction = classifier_rf.predict(np_df.reshape(1,-1))
 
@@ -86,7 +74,6 @@ Running the Application
 Clone the Repository: First, clone the repository to your local machine:
 
 ```bash
-Copy code
 git clone https://github.com/Duvvuridurgaprasad28/Breast-Cancer-Prediction.git
 cd Breast-Cancer-Prediction
 ```
@@ -94,13 +81,11 @@ cd Breast-Cancer-Prediction
 Install Dependencies: Install the required Python libraries using the requirements.txt file:
 ```
 ```bash
-Copy code
 pip install -r requirements.txt
 ```
 Run the Flask App: After installing the dependencies, run the Flask application using the following command:
 
 ```bash
-Copy code
 python app.py
 ```
 Access the Web Application: Open your web browser and go to http://127.0.0.1:5000/ to access the app.
